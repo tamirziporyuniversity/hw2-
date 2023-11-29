@@ -205,13 +205,13 @@ if __name__ == "__main__":
     # Evaluate perplexity with dev-data
 
     
-    perplexity_shakespeare_2 = eval_neural_lm('data/shakespeare.txt', '2') #9.332726040746131
+    perplexity_shakespeare_2 = eval_neural_lm('shakespeare_for_perplexity.txt', '2') #9.332726040746131
     print(f"test perplexity with 2 for shakespeare : {perplexity_shakespeare_2}")
 
     perplexity_wikipedia_2 = eval_neural_lm('wikipedia_for_perplexity.txt', '2') #24.69498410960043
     print(f"test perplexity with 2 for wikipedia : {perplexity_wikipedia_2}")
 
-    perplexity_shakespeare_ln = eval_neural_lm('data/shakespeare.txt', 'ln') #9.332726040746131
+    perplexity_shakespeare_ln = eval_neural_lm('shakespeare_for_perplexity.txt', 'ln') #9.332726040746131
     print(f"test perplexity with ln for shakespeare : {perplexity_shakespeare_ln}")
 
     perplexity_wikipedia_ln = eval_neural_lm('wikipedia_for_perplexity.txt', 'ln') #24.69498410960043
